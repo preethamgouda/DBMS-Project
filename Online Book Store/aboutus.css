@@ -1,0 +1,74 @@
+body {
+  background-color:#0C0E0F;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Arial;
+  color: whitesmoke;
+}
+
+.split {
+  height: 120%;
+  width: 45%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-image: url("kar1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.right {
+  right: 0;
+  background-image: url("kar.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+.centered {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 200px;
+  border-radius: 50%;
+}
+.left {
+    background-image: url("kar1.jpg");
+    animation-name: example;
+    animation-duration: 4s;
+  }
+  
+  @keyframes example {
+    25%  {background-color:white; left:200px; top:0px;}
+  }
+  .right {
+    background-image: url("kar.jpg");
+    animation-name: ex;
+    animation-duration: 4s;
+  }
+  
+  @keyframes ex {
+    25% {background-color:white; right:200px; top:0px;}
+  }
+  a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: red;
+  }
